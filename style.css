@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Bacasime+Antique|Qwitcher+Grypen|Lobster|Roboto|Poppins");
+
+body {
+    font-family: Poppins, sans-serif;
+    color: black;
+    background-image: linear-gradient(135deg, #E9FFC2 0%, #C3EDC0 50%, #AAC8A7 75%);
+    /* background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%); */
+    font-size: large;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    margin: 0 10px 30px 10px;
+}
+
+header h1 {
+    display: inline;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Qwitcher Grypen';
+    border-bottom: solid;
+    color: #A4907C;
+}
+
+.section-form {
+    border: solid;
+    border-radius: 12%;
+    /* background-color: #99A98F; /* #15172b; */
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.section-data {
+    margin: 30px;
+}
+
+.form {
+    padding: 30px;
+}
+
+.welcome-msg h3{
+    font-style: italic;
+    margin: 0 0 10px 0;
+}
+
+.welcome-msg h1 {
+    margin: 0 0 10px 0;
+    font-family: Lobster;
+    font-size: 40px;
+}
+
+.form-fields {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-fields div {
+    padding: 10px 0;
+}
+
+.form-fields span {
+    color: red;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.input {
+    padding: 5px;
+    width: 100%;
+    font-size: inherit;
+    border: 1px solid black;
+    font-family: inherit;
+    background-color: unset;
+}
+
+input[type="radio"], .radio-label {
+    cursor: pointer;
+}
+
+.radio-grp {
+    display: inline;
+}
+
+.radio-grp:hover {
+    background-color: #A0C49D;
+}
+
+.radio-label {
+    padding-right: 4px;
+}
+
+.input #show {
+    display: none !important;
+    font-style: italic;
+}
+
+.submit {
+    align-items: center;
+}
+
+.input:hover, input:focus, .skills option {
+    background-color: #A0C49D;
+}
+
+.input-btn:active {
+    background-color: unset;
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: #A0C49D;
+    display: inline-flex;
+    height: auto;
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.card-img, .card-text {
+    margin: 2px 5px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.card-text p {
+    word-wrap: break-word;
+    margin: 5px 0;
+}

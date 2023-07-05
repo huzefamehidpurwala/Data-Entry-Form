@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Attendance</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Data Entry Form</h1>
+        </header>
+        
+        <!-- FORM START -->
+        <section class="section-form">
+                
+            <form class="form">
+                <div class="welcome-msg">
+                    <h1>Welcome</h1>
+                    <h3>Add your data to the database.</h3>
+                </div>
+                    
+                <div class="form-fields">
+                    <small>(<span>*</span>) Mark for Required Fields.</small>
+                    <div class="full-name">
+                        <label class="label" for="full-name"><span>*</span>Full Name: </label>
+                        <input class="input" type="text" name="full-name" id="full-name" required autofocus>
+                    </div>
+                    <div class="email">
+                        <label class="label" for="email"><span>*</span>Email ID: </label>
+                        <input class="input" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="gender">
+                        <label class="label" for="gender"><span>*</span>Gender: </label>
+                        <div class="radio-grp"><input class="radio-input" type="radio" name="gender" id="Male" value="Male"><label class="radio-label" for="Male">Male</label></div>
+                        <div class="radio-grp"><input class="radio-input" type="radio" name="gender" id="Female" value="Female"><label class="radio-label" for="Female">Female</label></div>
+                        <div class="radio-grp"><input class="radio-input" type="radio" name="gender" id="Other" value="Other"><label class="radio-label" for="Other">Other</label></div>
+                        <!-- <select class="input" name="gender" id="gender" required>
+                            <option value=""></option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select> -->
+                    </div>
+                    <div class="skills">
+                        <label class="label" for="skills">Skills: </label>
+                        <select class="input" name="skills" id="skills">
+                            <option value="" id="show">-- Select --</option>
+                            <option value="C-Programming">C-Programming</option>
+                            <option value="C++">C++</option>
+                            <option value="C#">C#</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="Web Development">Web Development</option>
+                        </select>
+                    </div>
+                    <div class="submit">
+                        <input class="input input-btn" type="reset" value="Append Data" onclick="AddRow()">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- FORM END -->
+        
+        <div id="header"></div>
+
+        <!-- TABLE START -->
+        <section class="section-data">
+            <div class="data" id="data">
+                <!-- DATA APPENDS HERE -->
+            </div>
+        </section>
+        <!-- TABLE END -->
+        <script src="script.js" async defer></script>
+    </body>
+</html>
