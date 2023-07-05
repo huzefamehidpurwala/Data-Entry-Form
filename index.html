@@ -20,7 +20,7 @@
         <!-- FORM START -->
         <section class="section-form">
                 
-            <form class="form">
+            <form class="form" onsubmit="AddRow();return false">
                 <div class="welcome-msg">
                     <h1>Welcome</h1>
                     <h3>Add your data to the database.</h3>
@@ -41,12 +41,6 @@
                         <div class="radio-grp"><input class="radio-input" type="radio" name="gender" id="Male" value="Male"><label class="radio-label" for="Male">Male</label></div>
                         <div class="radio-grp"><input class="radio-input" type="radio" name="gender" id="Female" value="Female"><label class="radio-label" for="Female">Female</label></div>
                         <div class="radio-grp"><input class="radio-input" type="radio" name="gender" id="Other" value="Other"><label class="radio-label" for="Other">Other</label></div>
-                        <!-- <select class="input" name="gender" id="gender" required>
-                            <option value=""></option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="Other">Other</option>
-                        </select> -->
                     </div>
                     <div class="skills">
                         <label class="label" for="skills">Skills: </label>
@@ -61,7 +55,7 @@
                         </select>
                     </div>
                     <div class="submit">
-                        <input class="input input-btn" type="reset" value="Append Data" onclick="AddRow()">
+                        <input class="input input-btn" type="submit" value="Append Data">
                     </div>
                 </div>
             </form>

@@ -29,6 +29,11 @@ function AddRow() {
         div.setAttribute('class', 'card');
         div.innerHTML = "<div class=\"card-img\"><img src=\"./form.png\" height=\"120px\" width=\"110px\"></div>" + "<div class=\"card-text\">" + "<p>Full Name: "+ fname + "</p>" + "<p>Email: "+ email + "</p>" + "<p>Gender: "+ gender + "</p>" + "<p>Skills: "+ skills + "</p>" + "</div>";
         document.getElementById('data').appendChild(div);
+
+        document.getElementById("full-name").value = "";
+        document.getElementById("email").value = "";
+        // Gender().toString();
+        document.getElementById("skills").value = "";
     } else {
         alert("Full Name, Email and Gender are required to move ahead!");
     }
