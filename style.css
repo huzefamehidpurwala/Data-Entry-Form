@@ -84,7 +84,7 @@ input[type="radio"], .radio-label {
 }
 
 .radio-grp {
-    display: inline;
+    display: inline-block;
 }
 
 .radio-grp:hover {
