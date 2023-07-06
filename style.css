@@ -33,15 +33,15 @@ header h1 {
     header h1 {
         font-size: 80px;
     }
+
+    body {
+        font-size: medium;
+    }
 }
 
 @media screen and (max-width: 410px) {
     header h1 {
         font-size: 70px;
-    }
-
-    body {
-        font-size: medium;
     }
 }
 
